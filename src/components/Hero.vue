@@ -1,0 +1,24 @@
+<template>
+    <!-- Hero Section  -->
+    <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Anand <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
