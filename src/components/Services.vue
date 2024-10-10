@@ -7,25 +7,25 @@
         <p>"I'm a freelance web developer offering a range of services including web development, landing pages, mobile apps, full-stack development, and chatbots. With expertise in Angular and .NET Core, I can help bring your ideas to life with efficient and high-quality solutions."</p>
       </div>
       <div class="service-bottom">
-        <div class="service-item service-item-1">
+        <div class="service-item service-item-1" :style="{ backgroundImage: 'url(' + require('@/assets/img/custom-website.png') + ')' }">
           <div class="icon"><img src="../assets/img/landing-page.png"  style="height: 60px; width: 60px;"  /></div>
-          <h2>Landing page </h2>
-          <p>Delivering visually stunning landing pages optimized for higher conversions, ensuring your brand stands out and captivates visitors with engaging content and intuitive design.</p>
+          <h2>Custom Websites </h2>
+          <p>We offer custom website development, creating user-friendly, responsive websites to meet your business needs and enhance your online presence effectively.</p>
         </div>
-        <div class="service-item service-item-2">
-          <div class="icon"><img src="../assets/img/chatbot.png" style="height: 60px; width: 60px;" /></div>
-          <h2>Chat boat</h2>
-          <p>reating intelligent chatbots that streamline customer interactions, providing personalized support and enhancing user engagement, while saving time and resources for your business.</p>
-        </div>
-        <div class="service-item service-item-3">
-          <div class="icon"><img src="../assets/img/booking.png"  style="height: 60px; width: 60px;"/></div>
+        <div class="service-item service-item-2" :style="{ backgroundImage: 'url(' + require('@/assets/img/mobile-app.jpg') + ')' }">
+          <div class="icon"><img src="../assets/img/booking.png" style="height: 60px; width: 60px;" /></div>
           <h2>Mobile apps</h2>
-          <p>Designing and developing custom mobile apps that offer a seamless user experience, incorporating innovative features and sleek interfaces to meet your specific needs and goals.</p>
+          <p>We create custom mobile apps, offering personalized, high-performance solutions designed to meet your business needs for both Android and iOS platforms.</p>
         </div>
-        <div class="service-item service-item-4">
+        <div class="service-item service-item-3" :style="{ backgroundImage: 'url(' + require('@/assets/img/backend-developemnt.jpg') + ')' }">
+          <div class="icon"><img src="../assets/img/backend.png"  style="height: 60px; width: 60px;"/></div>
+          <h2>Backend Development</h2>
+          <p>We provide backend development services, building secure and efficient systems to ensure smooth functionality and seamless performance for your applications.</p>
+        </div>
+        <div class="service-item service-item-4" :style="{ backgroundImage: 'url(' + require('@/assets/img/full_stack_development.jpg') + ')' }">
           <div class="icon"><img src="../assets/img/coding.png" style="height: 70px; width: 70px;" /></div>
           <h2>Full Stack Web</h2>
-          <p>Offering comprehensive full-stack development services, from database management to front-end design, ensuring a cohesive and efficient digital solution that meets your business objectives.</p>
+          <p>We provide full stack development services, building complete, scalable web solutions that cover both frontend and backend to meet your business needs efficiently.</p>
         </div>
       </div>
     </div>

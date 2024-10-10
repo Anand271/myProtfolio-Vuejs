@@ -9,12 +9,19 @@
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
-            <h1>Project 1</h1>
-            <h2 class="crimson">Parking system </h2>
+            <h1>Parking System</h1>
+            <h2 class="crimson">DpMobile Parking</h2>
             <p>Our parking system revolutionizes parking management in Denmark. With our mobile application, users can easily find nearby parking spaces, park their vehicles, and pay online. Say goodbye to circling the block in search of a spot—our app makes parking hassle-free and convenient.</p>
+			<hr>
+			<div class="d-flex align-items-center"> 
+				<h3 class="mx-3">Links:</h3>
+				<a href="https://dpmobileparking.dk/" target="_blank" style="height: 30px; width: 30px;" class="mx-2"><img src="../assets/img/web.png" alt=""></a>
+				<a href="https://play.google.com/store/apps/details?id=dk.dpmobileparking&hl=en_IN" target="_blank" style="height: 30px; width: 30px;" class="mx-2"><img src="../assets/img/app-store.png" alt=""></a>
+				<a href="https://apps.apple.com/us/app/dp-mobile-parking/id905632836" target="_blank" style="height: 30px; width: 30px;" class="mx-2"><img src="../assets/img/play-store.png" alt=""></a>
+			</div>
           </div>
           <div class="project-img">
-            <img src="https://www.mokosmart.com/wp-content/uploads/2022/03/Smart-parking-system-using-IoT.webp" alt="img">
+            <img src="../assets/img/dpparking.jpg" alt="img">
           </div>
         </div>
         <div class="project-item">
