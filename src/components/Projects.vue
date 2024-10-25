@@ -6,7 +6,21 @@
       <div class="projects-header">
         <h1 class="section-title">Recent <span>Projects</span></h1>
       </div>
-      <div class="all-projects">
+	  <div class="row">
+		<div v-for="project in projects" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+			<div class="card" style="border:1px solid crimson; border-radius: 10px; padding: 2px;">
+			<img class="card-img-top" :src="project.image" :alt="project.title" style="border-radius: 10px 10px 0 0;">
+			<div class="card-body">
+				<h2 class="card-title">{{ project.title }}</h2>
+				<p class="card-text">{{ project.shortDescription }}</p>
+				<!-- <a href="#" class="btn btn-lg text-light" style="background-color: crimson;">See more...</a> -->
+			</div>
+		</div>
+    </div>
+  </div>
+
+
+      <!-- <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
             <h1>Parking System</h1>
@@ -54,110 +68,9 @@
             <img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/direct/1591662767267-Document%20Management%20Software.png" alt="img">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
-
-    <!-- Projects Section -->
-    <!-- <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-
-
-	  
-
-      <article class="postcard dark blue">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://res.cloudinary.com/dtlhwr2ov/image/upload/v1716206830/mySelf/rht8tgvqhocykwmikzub.png" alt="Image Title" />
-			</a>
-			<div class="postcard__text">
-				<h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
-				</div>
-				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-					<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-					<li class="tag__item play blue">
-						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-					</li>
-				</ul>
-			</div>
-		</article>
-		<article class="postcard dark red">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />	
-			</a>
-			<div class="postcard__text">
-				<h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
-				</div>
-				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-					<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-					<li class="tag__item play red">
-						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-					</li>
-				</ul>
-			</div>
-		</article>
-		<article class="postcard dark green">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
-			</a>
-			<div class="postcard__text">
-				<h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
-				</div>
-				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-					<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-					<li class="tag__item play green">
-						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-					</li>
-				</ul>
-			</div>
-		</article>
-		<article class="postcard dark yellow">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
-			</a>
-			<div class="postcard__text">
-				<h1 class="postcard__title yellow"><a href="#">Podcast Title</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
-				</div>
-				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-					<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-					<li class="tag__item play yellow">
-						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-					</li>
-				</ul>
-			</div>
-		</article>
-	</div>
-</section> -->
 
   <!-- End Projects Section -->
     <SingleProject v-if="showModal"/>
@@ -170,13 +83,26 @@ export default {
    data(){
     return{
       showModal: false,
+	  projects: [],
     }
    },
+   mounted() {
+    this.loadProjects();
+  },
     methods:{
       openProject(){
         this.showModal = true
         console.log(this.showModal)
+      },
+	  async loadProjects() {
+      try {
+        const response = await fetch('/data/projects.json');
+        if (!response.ok) throw new Error('Failed to load projects');
+        this.projects = await response.json();
+      } catch (error) {
+        console.error(error);
       }
+    },
     },
     components:{
       SingleProject
@@ -187,8 +113,10 @@ export default {
 <style>
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+
 /* This pen */
- body {
+ /* body {
 	 font-family: "Baloo 2", cursive;
 	 font-size: 16px;
 	 color: #fff;
@@ -211,7 +139,9 @@ export default {
 	 text-align: center;
 	 font-size: 2.5rem;
 }
-/* Cards */
+
+
+
  .postcard {
 	 flex-wrap: wrap;
 	 display: flex;
@@ -374,7 +304,9 @@ export default {
 		 background: #e1e5ea;
 	}
 }
-/* COLORS */
+
+
+
  .postcard .postcard__tagbox .green.play:hover {
 	 background: #79dd09;
 	 color: black;
@@ -463,6 +395,6 @@ export default {
 		 background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
 	}
 }
- 
+  */
 
 </style>

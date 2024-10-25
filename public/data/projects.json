@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "Parking Management System",
+      "shortDescription": "Finds parking areas near you",
+      "description": "Description of project one. here",
+      "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729774931/dpparking_mjbbir.jpg",
+      "tech": [".Net Core, C#"],
+      "mainLink":"",
+      "playStore":"",
+      "appStore":""
+    },
+    {
+      "id": 2,
+      "title": "Mr(employee) Management System",
+      "shortDescription": "Test",
+      "description": "Mr(employee) Management System",
+      "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729777349/mr_isoypw.png",
+      "tech": [".Net Core, C#"],
+      "mainLink":"",
+      "playStore":"",
+      "appStore":""
+    },
+    {
+        "id": 2,
+        "title": "Dating Web App",
+        "shortDescription": "Test",
+        "description": "Description of project two.",
+        "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729777688/Screenshot_2024-10-24_191702_hypzm9.png",
+        "tech": [".Net Core, C#"],
+        "mainLink":"",
+        "playStore":"",
+        "appStore":""
+    }
+  ]
+  
