@@ -19,7 +19,7 @@
           <a  href="mailto:anandsa271@gmail.com" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/gmail.png" /></a>
         </div>
       </div>
-      <p>Copyright © 2024 Santosh. All rights reserved</p>
+      <p>Copyright © {{ currentYear }} Santosh. All rights reserved</p>
     </div>
   </section>
   <!-- End Footer -->
@@ -28,8 +28,12 @@
   
   <script>
   export default {
-  
-  }
+    data() {
+      return {
+        currentYear: new Date().getFullYear(), // Gets the current year
+      };
+    },
+  };
   </script>
   
   <style>

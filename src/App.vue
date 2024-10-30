@@ -2,34 +2,6 @@
   <router-view/>
 </template>
 
-<script>
-// const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-// const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-// const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
-// const header = document.querySelector('.header.container');
-
-// hamburger.addEventListener('click', () => {
-// 	hamburger.classList.toggle('active');
-// 	mobile_menu.classList.toggle('active');
-// });
-
-// document.addEventListener('scroll', () => {
-// 	var scroll_position = window.scrollY;
-// 	if (scroll_position > 250) {
-// 		header.style.backgroundColor = '#29323c';
-// 	} else {
-// 		header.style.backgroundColor = 'transparent';
-// 	}
-// });
-
-// menu_item.forEach((item) => {
-// 	item.addEventListener('click', () => {
-// 		hamburger.classList.toggle('active');
-// 		mobile_menu.classList.toggle('active');
-// 	});
-// });
-</script>
-
 <style>
   @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 * {
@@ -42,6 +14,11 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
+
+body{
+	overflow-x: hidden
+}
+
 a {
 	text-decoration: none;
 }
@@ -59,10 +36,10 @@ img {
 }
 p {
 	color: black;
-	font-size: 1.4rem;
+	font-size: 1.4em;
+	font-weight: 500;
 	margin-top: 5px;
 	line-height: 2.5rem;
-	font-weight: 300;
 	letter-spacing: 0.05rem;
 }
 .section-title {
@@ -476,13 +453,21 @@ p {
 	content: '';
 	position: absolute;
 	left: -33px;
-	top: 19px;
+	top: 25px;
 	height: 98%;
 	width: 98%;
 	border: 7px solid crimson;
 	z-index: -1;
 }
 /* End About Section */
+
+/* contact Section */
+#skills .skills {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
 
 /* contact Section */
 #contact .contact {

@@ -7,13 +7,17 @@
         <h1 class="section-title">Recent <span>Projects</span></h1>
       </div>
 	  <div class="row">
-		<div v-for="project in projects" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+		<div v-for="project in projects" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 my-3" @click="openProject()">
 			<div class="card" style="border:1px solid crimson; border-radius: 10px; padding: 2px;">
 			<img class="card-img-top" :src="project.image" :alt="project.title" style="border-radius: 10px 10px 0 0;">
 			<div class="card-body">
 				<h2 class="card-title">{{ project.title }}</h2>
-				<p class="card-text">{{ project.shortDescription }}</p>
-				<!-- <a href="#" class="btn btn-lg text-light" style="background-color: crimson;">See more...</a> -->
+				<!-- <div class="d-flex">
+					<a href="#" class="btn btn-lg text-light" style="background-color: crimson;">See more...</a>
+					<div class="d-flex align-items-center mx-2">
+						<h3>Links:</h3>
+					</div>
+				</div> -->
 			</div>
 		</div>
     </div>

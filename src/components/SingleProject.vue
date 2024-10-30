@@ -9,6 +9,7 @@
       </div>
       <div class="modal-body">
         ...
+        <h3>I am body of single project</h3>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
