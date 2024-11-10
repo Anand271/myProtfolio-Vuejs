@@ -31,19 +31,20 @@
     },
     {
       "id": 2,
-      "title": "Mr(employee) Management System",
+      "title": "MR(employee) Management System",
       "shortDescription": "Test",
-      "description": "Mr(employee) Management System",
+      "description": "The project was a comprehensive employee management platform called MR Employee, designed to help managers oversee various tasks related to their employees. Through a mobile app, managers could manage tasks, track sales, log doctor visits, organize tours, handle expenses, and manage products for sale. Additionally, a web-based admin panel was available for managers and senior staff to oversee and control these employee activities effectively.",
       "points": [
         "",
         "",
         ""
       ],
-      "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+      "clientGoals":"The client aimed to create an efficient employee management platform, 'Mr Employee,' to streamline daily operations for managers and senior staff. Their goal was to provide a mobile app where managers could easily oversee tasks, track sales, monitor doctor visits, manage tours, handle expenses, and control product sales for employees. Additionally, they wanted a web-based admin panel that would allow senior staff to manage and supervise these activities conveniently from a central dashboard. This dual-platform solution would improve productivity and provide better oversight for employee-related tasks and records.",
       "myContributionPoints":[
-        "Built the mobile app APIs from scratch.",
-        "Developed the admin panel from scratch with role-based permissions.",
-        "Enabled features for managing parking areas, rates, and bookings."
+        "Developed the backend for the mobile app using .NET Core API.",
+        "Built the admin panel for web access using .NET Core MVC.",
+        "Managed the development process from scratch, ensuring smooth integration of features for task and employee management.",
+        "Implemented a secure and efficient structure for data handling and user interactions across both mobile and web platforms."
       ],
       "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729777349/mr_isoypw.png",
       "tech": [".Net Core MVC","Entity Framework","Repository Pattern","jQuery","Javascript","Git","C#", "HTML", "CSS"],
@@ -65,18 +66,19 @@
         "id": 3,
         "title": "Dating Web App",
         "shortDescription": "Test",
-        "description": "Description of project two.",
+        "description": "This project was a user-friendly dating platform designed to connect people based on shared interests. Users could discover and view profiles, express interest in others, and, when interest was mutual, form a 'match.' Features included real-time messaging with notifications, the ability to check if users were online, and local data storage to enhance app performance. Additionally, an admin panel allowed for efficient management of user roles.",
         "points": [
           "",
           "",
           ""
         ],
-        "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+        "clientGoals":"The project was created to gain practical experience in building a social platform with engaging features. The goal was to develop a comprehensive application that included profile discovery, matching, real-time interactions, and admin management, focusing on building a responsive and enjoyable user experience. This project provided an opportunity to learn and implement features commonly found in modern social apps.",
         "myContributionPoints":[
-          "Built the mobile app APIs from scratch.",
-          "Developed the admin panel from scratch with role-based permissions.",
-          "Enabled features for managing parking areas, rates, and bookings.",
-          ""
+          "Developed the Frontend and backend separately(Angular + .Net Core)",
+          "Implemented real-time messaging with notifications for instant communication between users",
+          "Added local data storage to improve performance and user experience.",
+          "Built online status functionality to show users who were currently active.",
+          "Created an admin management feature for managing user roles and permissions."
         ],
         "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729777688/Screenshot_2024-10-24_191702_hypzm9.png",
         "tech": ["Angular",".Net Core", "Signal R", "Entity Framework", "Bootstrap", "HTML"],
@@ -99,22 +101,22 @@
     {
       "id": 4,
       "title": "Document Management System",
-      "shortDescription": "Test",
-      "description": "Description of project two.",
+      "shortDescription": "",
+      "description": "This project involved building a robust document management system to help companies efficiently handle documents through defined processes. The system included features for document creation, multi-role approval workflows, email notifications with templates, and access controls based on specific user roles. This setup ensured that documents could be managed securely and approved efficiently across different company departments.",
       "points": [
         "",
         "",
         ""
       ],
-      "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+      "clientGoals":"The client needed a powerful document management system to streamline document processes across their organization. They wanted a solution that would allow for efficient document creation, a structured approval process involving multiple roles, and the ability to send notifications via email templates. Additionally, they required strict access control for different roles to maintain security and organization. This system aimed to increase operational efficiency and ensure proper management of all company documents.",
       "myContributionPoints":[
-        "Built the mobile app APIs from scratch.",
-        "Developed the admin panel from scratch with role-based permissions.",
-        "Enabled features for managing parking areas, rates, and bookings.",
-        ""
+        "Joined the project midway and quickly familiarized myself with the existing codebase to ensure smooth development.",
+        "Contributed to the development of multi-role approval workflows for document management.",
+        "Enhanced email functionality by integrating custom templates for notifications.",
+        "Implemented and refined role-based access control to secure documents based on user roles."
       ],
       "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729945795/Screenshot_2024-10-26_172430_hr4j5s.png",
-      "tech": [".Net Core", "C#"],
+      "tech": [".Net Core MVC", "C#", "Entity Framework", "Tinywow","HTML", "Bootstrap", "jQuery", "Javascript"],
       "mainLink":"",
       "playStore":"",
       "appStore":"",
@@ -133,23 +135,23 @@
   },
   {
     "id": 5,
-    "title": "PDF File Management System",
+    "title": "SmartPDF Viewer with Full-Text Search",
     "shortDescription": "Test",
-    "description": "Description of project two.",
+    "description": "This project is an advanced PDF viewer and management system with an admin and user interface. The admin panel lets administrators upload, categorize, and tag PDFs, as well as view category statistics. The user panel features a powerful search function, allowing searches by file name, title, tags, description, or specific words within the PDF. PDFs are displayed with PDF.js, offering enhanced viewing tools, and a tree view shows all pages, enabling easy navigation without opening the document.",
     "points": [
       "",
       "",
       ""
     ],
-    "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+    "clientGoals":"The goal of this project was to create an efficient and user-friendly PDF viewer and management system. The client wanted a solution that would allow admins to easily organize and categorize PDF documents and enable users to access and search these documents with advanced capabilities. This platform aimed to provide an intuitive PDF viewing experience with enhanced tools, flexible search options, and a structured, visual document navigation system to streamline PDF usage and retrieval.",
     "myContributionPoints":[
-      "Built the mobile app APIs from scratch.",
-      "Developed the admin panel from scratch with role-based permissions.",
-      "Enabled features for managing parking areas, rates, and bookings.",
-      ""
+      "Built and managed the admin panel for PDF uploading, categorization, tagging, and status monitoring.",
+      "Implemented the PDF viewer interface using PDF.js, enabling advanced viewing and tool capabilities beyond typical browser functions.",
+      "Developed a sophisticated search functionality that allows users to search by name, title, tags, description, and even text within the PDF.",
+      "Created a tree view feature that previews all PDF pages in a navigable structure, making it easy for users to locate content."
     ],
     "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729945617/Screenshot_2024-10-26_175459_dc6cpq.png",
-    "tech": ["Pdf js",".Net Core MVC","C#", "jQuery", "Javascript", "HTML", "Bootstrap", "CSS"],
+    "tech": ["PDF.js",".Net Core MVC","C#", "jQuery", "Javascript", "HTML", "Bootstrap", "CSS"],
     "mainLink":"",
     "playStore":"",
     "appStore":"",
@@ -161,6 +163,38 @@
       "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229961/Screenshot_2024-11-10_143951_typk5k.png",
       "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229960/Screenshot_2024-11-10_144025_yqtjqy.png"
     ]
+},
+{
+  "id": 6,
+  "title": "E-commerce website",
+  "shortDescription": "Test",
+  "description": "This is a comprehensive e-commerce platform for selling clothing, featuring a robust admin panel and user interface. Admins can upload products, define categories, set dynamic size options, and manage orders. They can view all registered users, monitor order statuses, and update each order’s status with options like 'Approved,' 'Packed,' 'On the Way,' and 'Delivered.' For users, the platform offers easy sign-up, login, product selection, order placement, and a 'My Orders' section where users can track their order status.",
+  "points": [
+    "",
+    "",
+    ""
+  ],
+  "clientGoals":"The aim of this project was to create a user-friendly e-commerce platform for clothing sales with an admin panel for efficient product and order management. The client wanted a streamlined solution that would allow admins to manage inventory, orders, and customers while providing users with a seamless shopping experience and clear order tracking.",
+  "myContributionPoints":[
+    "Developed the admin panel for product management, including dynamic size options and category creation.",
+    "Built user order management features, enabling admins to view, update, and track all orders.",
+    "Implemented user account features for sign-up, login, product browsing, and order tracking.",
+    "Added an order status update function to keep users informed about each stage of their purchase."
+  ],
+  "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259462/Screenshot_2024-11-10_224917_ajv722.png",
+  "tech": ["Angular",".Net Core", "C#", "Typescript", "HTML", "Bootstrap", "CSS", "fontawesome"],
+  "mainLink":"",
+  "playStore":"",
+  "appStore":"",
+  "images": [
+    "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259460/Screenshot_2024-11-10_224935_evpkg1.png",
+    "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259459/Screenshot_2024-11-10_224753_chgmql.png",
+    "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259458/Screenshot_2024-11-10_225041_wr4f9e.png",
+    "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259458/Screenshot_2024-11-10_225148_cnpssf.png",
+    "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259458/Screenshot_2024-11-10_225107_cq7kib.png",
+    "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259458/Screenshot_2024-11-10_225228_fbullb.png",
+    "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259458/Screenshot_2024-11-10_225252_re1wwz.png"
+  ]
 }
   ]
   
