@@ -13,7 +13,7 @@
         <p>
           Hii,
           I’m a <span style="color: crimson">FULL-STACK</span> web developer with over 3 years of experience in Angular and .NET Core. I enjoy building web applications and taking on new challenges to create effective solutions</p>
-        <a href="https://drive.google.com/file/d/16YMx5y4xXrB-xd76ATusAvgrTmeYmp4i/view?usp=sharing" target="_blank" class="cta">Resume</a>
+        <a href="https://drive.google.com/file/d/1k1vKImVvwT81Zn0OOXj4g91gK58PY73S/view?usp=sharing" target="_blank" class="cta">Resume</a>
       </div>
     </div>
   </section>
