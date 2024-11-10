@@ -20,7 +20,7 @@ body{
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .container {
 	min-height: 100vh;

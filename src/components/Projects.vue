@@ -1,104 +1,176 @@
 <template>
-
-
 <section id="projects">
     <div class="projects container">
       <div class="projects-header">
         <h1 class="section-title">Recent <span>Projects</span></h1>
       </div>
 	  <div class="row">
-		<div v-for="project in projects" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 my-3" @click="openProject()">
-			<div class="card" style="border:1px solid crimson; border-radius: 10px; padding: 2px;">
+		<div v-for="project in projects" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 my-3 open-modal-trigger" @click="openProject(project.id)">
+			<div class="card">
 			<img class="card-img-top" :src="project.image" :alt="project.title" style="border-radius: 10px 10px 0 0;">
 			<div class="card-body">
 				<h2 class="card-title">{{ project.title }}</h2>
-				<!-- <div class="d-flex">
-					<a href="#" class="btn btn-lg text-light" style="background-color: crimson;">See more...</a>
-					<div class="d-flex align-items-center mx-2">
-						<h3>Links:</h3>
-					</div>
-				</div> -->
 			</div>
 		</div>
     </div>
   </div>
-
-
-      <!-- <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Parking System</h1>
-            <h2 class="crimson">DpMobile Parking</h2>
-            <p>Our parking system revolutionizes parking management in Denmark. With our mobile application, users can easily find nearby parking spaces, park their vehicles, and pay online. Say goodbye to circling the block in search of a spot—our app makes parking hassle-free and convenient.</p>
-			<hr>
-			<div class="d-flex align-items-center"> 
-				<h3 class="mx-3">Links:</h3>
-				<a href="https://dpmobileparking.dk/" target="_blank" style="height: 30px; width: 30px;" class="mx-2"><img src="../assets/img/web.png" alt=""></a>
-				<a href="https://play.google.com/store/apps/details?id=dk.dpmobileparking&hl=en_IN" target="_blank" style="height: 30px; width: 30px;" class="mx-2"><img src="../assets/img/app-store.png" alt=""></a>
-				<a href="https://apps.apple.com/us/app/dp-mobile-parking/id905632836" target="_blank" style="height: 30px; width: 30px;" class="mx-2"><img src="../assets/img/play-store.png" alt=""></a>
-			</div>
-          </div>
-          <div class="project-img">
-            <img src="../assets/img/dpparking.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2 class="crimson">Dating app</h2>
-            <p>Its dating app, where connections blossom! Whether you're looking for love or companionship, our platform lets you register and find like-minded individuals based on your interests. Swipe, like, and chat with potential matches, and stay updated with their online status. Find your perfect match with ease and embark on a journey to meaningful relationships!</p>
-          </div>
-          <div class="project-img">
-            <img src="https://d540vms5r2s2d.cloudfront.net/mad/uploads/mad_blog_602a2ab3469971613376179.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2 class="crimson">Mr Management</h2>
-            <p>Our outdoor employee management system streamlines task allocation and tracking. Employees can input their tasks for the upcoming days, while managers can efficiently assign tasks, set targets, and monitor progress in real-time. With dynamic updates, the system ensures seamless coordination and optimal productivity for every project.</p>
-          </div>
-          <div class="project-img">
-            <img src="https://www.pockethrms.com/wp-content/uploads/2022/01/Happy-Workforce.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2 class="crimson">Document Management</h2>
-            <p>Our document management system offers a comprehensive solution for companies seeking efficient document processing. Documents can progress through various stages, with approvals required from different roles within the organization. The system facilitates document initiation, assignment to employees, and other essential functionalities, ensuring smooth workflow and compliance with organizational procedures.</p>
-          </div>
-          <div class="project-img">
-            <img src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/direct/1591662767267-Document%20Management%20Software.png" alt="img">
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
 
   <!-- End Projects Section -->
-    <SingleProject v-if="showModal"/>
+
+
+  <!-- Modal structure -->
+  <div
+      class="modal fade bd-example-modal-xl"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">{{project.title}}</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div v-if="showLoader" id="loading-test-1" class="loading-main-div w-100"> 
+              <div class="loading-mdb">
+                <div class="spinner-border loading-icon" style="width: 3rem; height: 3rem;" role="status" ></div>
+                <!-- <span class="loading-text">Loading...</span> -->
+              </div>
+            </div>
+            <div v-if="!showLoader" class="row">
+              <div class="col-12 col-md-4 col-sm-12 col-xl-4 left-column custom-scroller">
+                <div class="content" ref="leftColumn">
+                  <!-- Description Area -->
+                  <div class="left-heading-div">
+                    <h2>Description</h2>
+                    <p>{{project.description}}</p>
+                  </div>
+
+                  <!-- Technologies area -->
+                  <div class="left-heading-div">
+                    <h2 class="my-2">Technologies</h2>
+                    <div>
+                      <div class="mx-2 category-skills">
+                        <span class="skill-tag" v-for="(tech, index) in project.tech" :key="index">{{tech}}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Client Goal Area -->
+                  <div class="left-heading-div">
+                    <h2>Client Goals</h2>
+                    <p>{{project.clientGoals}}</p>
+                  </div>
+
+                  <!-- My Contribution Area -->
+                   <div class="left-heading-div">
+                    <h2>My Contribution</h2>
+                    <ul>
+                      <li v-for="(point, index) in project.myContributionPoints" :key="index">{{point}}</li>
+                    </ul>
+                   </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-8 col-sm-12 col-xl-8 right-column custom-scroller" ref="rightColumn">
+                <h2 class="text-center">Gallery</h2>
+                <div class="content" >
+                  <div>
+                    <img :src="project.image" :alt="project.title">
+                  </div>
+                  <div class="my-2" v-for="(img, index) in project.images" :key="index">
+                    <img :src="img" alt="">
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+                  <!-- more project area -->
+                  <div>
+                    <h2 class="underline">More Projects</h2>
+                    <div class="row">
+                      <div v-for="project in projectElseOpened" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 my-3 open-modal-trigger" @click="changeProject(project.id)">
+                        <div class="card">
+                        <img class="card-img-top" :src="project.image" :alt="project.title" style="border-radius: 10px 10px 0 0;">
+                        <div class="card-body">
+                          <h4 class="card-title">{{ project.title }}</h4>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>
-import SingleProject from '@/components/SingleProject.vue'
+import { Modal } from 'bootstrap';
 
 export default {
-   data(){
-    return{
+  data() {
+    return {
       showModal: false,
-	  projects: [],
-    }
-   },
-   mounted() {
+      projects: [],
+      projectElseOpened: [],
+      project:{},
+      showLoader: false,
+    };
+  },
+  mounted() {
     this.loadProjects();
   },
-    methods:{
-      openProject(){
-        this.showModal = true
-        console.log(this.showModal)
-      },
-	  async loadProjects() {
+  methods: {
+    openProject(id) {
+     const modal = new Modal(document.getElementById("exampleModal"));
+     this.project = this.projects.find(x=>x.id === id);
+
+     this.projectElseOpened = this.projects.filter(x=>x.id != id);
+     modal.show();
+    },
+    changeProject(id){
+
+      //showing empty screen for 700ms
+      this.showLoader = true;
+      setTimeout(() => {
+        this.showLoader = false;
+      }, 700);
+
+      this.scrollToTop();
+
+      this.projectElseOpened = this.projects.filter(x=>x.id != id);
+      this.project = this.projects.find(x=>x.id === id);
+    },
+    scrollToTop() {
+      // Scroll the left column to the top
+      this.$refs.leftColumn.scrollTop = 0;
+      console.log('left div', this.$refs.leftColumn.scrollTop);
+      // Scroll the right column to the top
+      this.$refs.rightColumn.scrollTop = 0;
+      console.log('right div', this.$refs.rightColumn.scrollTop);
+    },
+  	async loadProjects() {
       try {
         const response = await fetch('/data/projects.json');
         if (!response.ok) throw new Error('Failed to load projects');
@@ -107,298 +179,109 @@ export default {
         console.error(error);
       }
     },
-    },
-    components:{
-      SingleProject
-    }
-}
+  }
+};
 </script>
 
-<style>
+<style scoped>
 
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+/* custom scroller */
 
-
-/* This pen */
- /* body {
-	 font-family: "Baloo 2", cursive;
-	 font-size: 16px;
-	 color: #fff;
-	 text-rendering: optimizeLegibility;
-	 font-weight: initial;
-}
- .dark {
-	 background: #110f16;
-}
- .light {
-	 background: #f3f5f7;
-}
- a, a:hover {
-	 text-decoration: none;
-	 transition: color 0.3s ease-in-out;
-}
- #pageHeaderTitle {
-	 margin: 2rem 0;
-	 text-transform: uppercase;
-	 text-align: center;
-	 font-size: 2.5rem;
+.custom-scroller::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
 }
 
+.custom-scroller::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
 
+.custom-scroller::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
 
- .postcard {
-	 flex-wrap: wrap;
-	 display: flex;
-	 box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-	 border-radius: 10px;
-	 margin: 0 0 2rem 0;
-	 overflow: hidden;
-	 position: relative;
-	 color: #fff;
+.loading-main-div{
+  display: flex;
+  background-color: rgb(227, 227, 227);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
- .postcard.dark {
-	 background-color: #18151f;
+
+.left-heading-div{
+  margin: 1.5rem 0 0 0;
 }
- .postcard.light {
-	 background-color: #e1e5ea;
+
+.left-heading-div h2, .underline{
+  display: inline-block;
+  border-bottom: 1.5px solid crimson;
 }
- .postcard .t-dark {
-	 color: #18151f;
-}
- .postcard a {
-	 color: inherit;
-}
- .postcard h1, .postcard .h1 {
-	 margin-bottom: 0.5rem;
-	 font-weight: 500;
-	 line-height: 1.2;
-}
- .postcard .small {
-	 font-size: 80%;
-}
- .postcard .postcard__title {
-	 font-size: 1.75rem;
-}
- .postcard .postcard__img {
-	 max-height: 180px;
-	 width: 100%;
-	 object-fit: cover;
-	 position: relative;
-}
- .postcard .postcard__img_link {
-	 display: contents;
-}
- .postcard .postcard__bar {
-	 width: 50px;
-	 height: 10px;
-	 margin: 10px 0;
-	 border-radius: 5px;
-	 background-color: #424242;
-	 transition: width 0.2s ease;
-}
- .postcard .postcard__text {
-	 padding: 1.5rem;
-	 position: relative;
-	 display: flex;
-	 flex-direction: column;
-}
- .postcard .postcard__preview-txt {
-	 overflow: hidden;
-	 text-overflow: ellipsis;
-	 text-align: justify;
-	 height: 100%;
-}
- .postcard .postcard__tagbox {
-	 display: flex;
-	 flex-flow: row wrap;
-	 font-size: 14px;
-	 margin: 20px 0 0 0;
-	 padding: 0;
-	 justify-content: center;
-}
- .postcard .postcard__tagbox .tag__item {
-	 display: inline-block;
-	 background: rgba(83, 83, 83, 0.4);
-	 border-radius: 3px;
-	 padding: 2.5px 10px;
-	 margin: 0 5px 5px 0;
-	 cursor: default;
-	 user-select: none;
-	 transition: background-color 0.3s;
-}
- .postcard .postcard__tagbox .tag__item:hover {
-	 background: rgba(83, 83, 83, 0.8);
-}
- .postcard:before {
-	 content: "";
-	 position: absolute;
-	 top: 0;
-	 right: 0;
-	 bottom: 0;
-	 left: 0;
-	 background-image: linear-gradient(-70deg, #424242, transparent 50%);
-	 opacity: 1;
-	 border-radius: 10px;
-}
- .postcard:hover .postcard__bar {
-	 width: 100px;
-}
- @media screen and (min-width: 769px) {
-	 .postcard {
-		 flex-wrap: inherit;
-	}
-	 .postcard .postcard__title {
-		 font-size: 2rem;
-	}
-	 .postcard .postcard__tagbox {
-		 justify-content: start;
-	}
-	 .postcard .postcard__img {
-		 max-width: 300px;
-		 max-height: 100%;
-		 transition: transform 0.3s ease;
-	}
-	 .postcard .postcard__text {
-		 padding: 3rem;
-		 width: 100%;
-	}
-	 .postcard .media.postcard__text:before {
-		 content: "";
-		 position: absolute;
-		 display: block;
-		 background: #18151f;
-		 top: -20%;
-		 height: 130%;
-		 width: 55px;
-	}
-	 .postcard:hover .postcard__img {
-		 transform: scale(1.1);
-	}
-	 .postcard:nth-child(2n+1) {
-		 flex-direction: row;
-	}
-	 .postcard:nth-child(2n+0) {
-		 flex-direction: row-reverse;
-	}
-	 .postcard:nth-child(2n+1) .postcard__text::before {
-		 left: -12px !important;
-		 transform: rotate(4deg);
-	}
-	 .postcard:nth-child(2n+0) .postcard__text::before {
-		 right: -12px !important;
-		 transform: rotate(-4deg);
-	}
-}
- @media screen and (min-width: 1024px) {
-	 .postcard__text {
-		 padding: 2rem 3.5rem;
-	}
-	 .postcard__text:before {
-		 content: "";
-		 position: absolute;
-		 display: block;
-		 top: -20%;
-		 height: 130%;
-		 width: 55px;
-	}
-	 .postcard.dark .postcard__text:before {
-		 background: #18151f;
-	}
-	 .postcard.light .postcard__text:before {
-		 background: #e1e5ea;
-	}
+
+.left-heading-div ul li, .left-heading-div p {
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 
+.card{
+    box-shadow: 0px 0px 18px 0 #0000002c;
+	border-radius: 10px;
+	cursor: pointer; 
+}
 
- .postcard .postcard__tagbox .green.play:hover {
-	 background: #79dd09;
-	 color: black;
+.card:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
 }
- .green .postcard__title:hover {
-	 color: #79dd09;
+
+.modal-body {
+  display: flex;
 }
- .green .postcard__bar {
-	 background-color: #79dd09;
+
+.left-column,
+.right-column {
+  max-height: 80vh; /* Set this to the desired height */
+  overflow-y: auto; /* Enable scrolling */
 }
- .green::before {
-	 background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+
+.content {
+  padding: 10px; /* Optional padding for inner content */
 }
- .green:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+
+.tech{
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: rgb(174, 174, 174);
 }
- .postcard .postcard__tagbox .blue.play:hover {
-	 background: #0076bd;
+
+.category-skills{
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 10px; /* Optional: Adds space between skill tags */
+    align-items: center;
+    justify-content: center;
 }
- .blue .postcard__title:hover {
-	 color: #0076bd;
+
+.skill-tag {
+    display: inline-block;
+    align-items: center;
+    flex: 1 1 auto; 
+    max-width: fit-content; /* Keeps tags from growing too wide */
+    background-color: blank;
+    border: 1px solid crimson;
+    cursor: context-menu;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin: 5px 0 0 0;
+    font-size: 1.5em;
+    font-weight: 600;
 }
- .blue .postcard__bar {
-	 background-color: #0076bd;
-}
- .blue::before {
-	 background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
-}
- .blue:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
-}
- .postcard .postcard__tagbox .red.play:hover {
-	 background: #bd150b;
-}
- .red .postcard__title:hover {
-	 color: #bd150b;
-}
- .red .postcard__bar {
-	 background-color: #bd150b;
-}
- .red::before {
-	 background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
-}
- .red:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
-}
- .postcard .postcard__tagbox .yellow.play:hover {
-	 background: #bdbb49;
-	 color: black;
-}
- .yellow .postcard__title:hover {
-	 color: #bdbb49;
-}
- .yellow .postcard__bar {
-	 background-color: #bdbb49;
-}
- .yellow::before {
-	 background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
-}
- .yellow:nth-child(2n)::before {
-	 background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
-}
- @media screen and (min-width: 769px) {
-	 .green::before {
-		 background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
-	}
-	 .green:nth-child(2n)::before {
-		 background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
-	}
-	 .blue::before {
-		 background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-	}
-	 .blue:nth-child(2n)::before {
-		 background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-	}
-	 .red::before {
-		 background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-	}
-	 .red:nth-child(2n)::before {
-		 background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-	}
-	 .yellow::before {
-		 background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-	}
-	 .yellow:nth-child(2n)::before {
-		 background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-	}
-}
-  */
 
 </style>

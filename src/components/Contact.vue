@@ -9,6 +9,14 @@
       <div class="contact-items">
         
         <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/phone--v1.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+91 6264847489</h2>
+          </div>
+        </div>
+
+        <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
           <div class="contact-info">
             <h1>Email</h1>

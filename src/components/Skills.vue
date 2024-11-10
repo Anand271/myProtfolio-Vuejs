@@ -63,7 +63,7 @@ export default {
 
 .skills-section {
     padding: 20px;
-    color: blank; /* blank color for text */
+    color: blank;
 }
 
 .category {
@@ -74,7 +74,6 @@ export default {
 }
 
 .category:hover{
-    /* border: 2px solid crimson; */
     box-shadow: 0px 0px 5px 0 #0000002c;
 }
 

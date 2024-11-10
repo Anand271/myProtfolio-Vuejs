@@ -3,56 +3,164 @@
       "id": 1,
       "title": "Parking Management System",
       "shortDescription": "Finds parking areas near you",
-      "description": "Description of project one. here",
+      "description": "This project is a mobile app that lets users find and book nearby parking spaces easily. It also includes an admin panel for managing parking areas, rates, and user bookings.",
+      "points": [
+        "",
+        "",
+        ""
+      ],
+      "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+      "myContributionPoints":[
+        "Built the mobile app APIs from scratch.",
+        "Developed the admin panel from scratch with role-based permissions.",
+        "Enabled features for managing parking areas, rates, and bookings."
+      ],
       "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729774931/dpparking_mjbbir.jpg",
-      "tech": [".Net Core, C#"],
+      "tech": [".Net Core", ".Net MVC", "Entity Framework","jQuery", "My Sql","Git", "Docker" ],
       "mainLink":"",
       "playStore":"",
-      "appStore":""
+      "appStore":"",
+      "images": [
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731224961/Screenshot_2024-11-10_131536_vnldi4.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731224961/Screenshot_2024-11-10_131608_uvskww.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731224961/Screenshot_2024-11-10_131636_zvysji.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731224960/Screenshot_2024-11-10_131655_bwewxr.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731224960/Screenshot_2024-11-10_131723_bbyifa.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731224960/Screenshot_2024-11-10_131709_zjtiz4.png"
+      ]
     },
     {
       "id": 2,
       "title": "Mr(employee) Management System",
       "shortDescription": "Test",
       "description": "Mr(employee) Management System",
+      "points": [
+        "",
+        "",
+        ""
+      ],
+      "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+      "myContributionPoints":[
+        "Built the mobile app APIs from scratch.",
+        "Developed the admin panel from scratch with role-based permissions.",
+        "Enabled features for managing parking areas, rates, and bookings."
+      ],
       "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729777349/mr_isoypw.png",
-      "tech": [".Net Core, C#"],
+      "tech": [".Net Core MVC","Entity Framework","Repository Pattern","jQuery","Javascript","Git","C#", "HTML", "CSS"],
       "mainLink":"",
       "playStore":"",
-      "appStore":""
+      "appStore":"",
+      "images": [
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226399/Screenshot_2024-11-10_133900_m0hxjp.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226398/Screenshot_2024-11-10_134111_nbfryl.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226399/Screenshot_2024-11-10_134058_ot9wlu.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226398/Screenshot_2024-11-10_134046_obcoxg.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226398/Screenshot_2024-11-10_134130_bf3jgl.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226398/Screenshot_2024-11-10_134149_nff5i9.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226397/Screenshot_2024-11-10_134215_fbnvmn.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731226397/Screenshot_2024-11-10_134223_sszagu.png"
+      ]
     },
     {
         "id": 3,
         "title": "Dating Web App",
         "shortDescription": "Test",
         "description": "Description of project two.",
+        "points": [
+          "",
+          "",
+          ""
+        ],
+        "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+        "myContributionPoints":[
+          "Built the mobile app APIs from scratch.",
+          "Developed the admin panel from scratch with role-based permissions.",
+          "Enabled features for managing parking areas, rates, and bookings.",
+          ""
+        ],
         "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729777688/Screenshot_2024-10-24_191702_hypzm9.png",
-        "tech": [".Net Core, C#"],
+        "tech": ["Angular",".Net Core", "Signal R", "Entity Framework", "Bootstrap", "HTML"],
         "mainLink":"",
         "playStore":"",
-        "appStore":""
+        "appStore":"",
+        "images": [
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227415/Screenshot_2024-11-10_135646_kawkbz.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227414/Screenshot_2024-11-10_135735_lplib3.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227413/Screenshot_2024-11-10_135749_rfr1dq.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227412/Screenshot_2024-11-10_135802_nqqgob.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227412/Screenshot_2024-11-10_135816_my1aog.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227413/Screenshot_2024-11-10_135827_nwl3po.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227412/Screenshot_2024-11-10_135841_lmplpa.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227411/Screenshot_2024-11-10_135851_g8wuaz.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227411/Screenshot_2024-11-10_135902_xtiggk.png",
+          "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731227411/Screenshot_2024-11-10_135912_xoqxw3.png"
+        ]
     },
     {
       "id": 4,
       "title": "Document Management System",
       "shortDescription": "Test",
       "description": "Description of project two.",
+      "points": [
+        "",
+        "",
+        ""
+      ],
+      "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+      "myContributionPoints":[
+        "Built the mobile app APIs from scratch.",
+        "Developed the admin panel from scratch with role-based permissions.",
+        "Enabled features for managing parking areas, rates, and bookings.",
+        ""
+      ],
       "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729945795/Screenshot_2024-10-26_172430_hr4j5s.png",
-      "tech": [".Net Core, C#"],
+      "tech": [".Net Core", "C#"],
       "mainLink":"",
       "playStore":"",
-      "appStore":""
+      "appStore":"",
+      "images": [
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228195/Screenshot_2024-11-10_140851_es09lq.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228194/Screenshot_2024-11-10_140907_ruqkrc.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228193/Screenshot_2024-11-10_140926_qrmrgs.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228194/Screenshot_2024-11-10_140954_hi8x5w.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228191/Screenshot_2024-11-10_141017_aqz1ci.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228190/Screenshot_2024-11-10_141037_vldcj0.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228191/Screenshot_2024-11-10_141101_qxrmtd.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228190/Screenshot_2024-11-10_141120_lwnmnt.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228190/Screenshot_2024-11-10_141139_a52ogr.png",
+        "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731228189/Screenshot_2024-11-10_141150_fsof3f.png"
+      ]
   },
   {
     "id": 5,
     "title": "PDF File Management System",
     "shortDescription": "Test",
     "description": "Description of project two.",
+    "points": [
+      "",
+      "",
+      ""
+    ],
+    "clientGoals":"The client wants to provide a mobile app for users to easily find and book nearby parking, with both free and paid options. They also need an admin system with role-based permissions, allowing managers to set rates, manage guest parking, and monitor parking availability effectively.",
+    "myContributionPoints":[
+      "Built the mobile app APIs from scratch.",
+      "Developed the admin panel from scratch with role-based permissions.",
+      "Enabled features for managing parking areas, rates, and bookings.",
+      ""
+    ],
     "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1729945617/Screenshot_2024-10-26_175459_dc6cpq.png",
-    "tech": [".Net Core, C#"],
+    "tech": ["Pdf js",".Net Core MVC","C#", "jQuery", "Javascript", "HTML", "Bootstrap", "CSS"],
     "mainLink":"",
     "playStore":"",
-    "appStore":""
+    "appStore":"",
+    "images": [
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229960/Screenshot_2024-11-10_144047_ntirik.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229967/Screenshot_2024-11-10_143737_jtispl.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229963/Screenshot_2024-11-10_143838_f0hqt2.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229962/Screenshot_2024-11-10_143858_u2dcff.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229961/Screenshot_2024-11-10_143951_typk5k.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731229960/Screenshot_2024-11-10_144025_yqtjqy.png"
+    ]
 }
   ]
   
