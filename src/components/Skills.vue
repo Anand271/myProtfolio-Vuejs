@@ -2,7 +2,7 @@
     <section id="skills">
         <div class="skills-section row align-items-center justify-content-center">
             <h1 class="section-title">M<span>y</span> Sk<span>i</span>lls</h1>
-            <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
+    <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
         <h2 class="category-header">Frameworks</h2>
         <div class="category-skills">
             <span class="skill-tag">Angular <i class="fa-brands fa-angular"></i></span>
@@ -18,6 +18,14 @@
             <span class="skill-tag">Javascript <i class="fa-brands fa-js"></i></span>
             <span class="skill-tag">HTML <i class="fa-brands fa-html5"></i></span>
         <span class="skill-tag">CSS <i class="fa-brands fa-css3-alt"></i></span>
+        </div>
+    </div>
+    <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
+        <h2 class="category-header">Databases</h2>
+        <div class="category-skills">
+            <span class="skill-tag">MS SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Postgres Sql</span>
         </div>
     </div>
     <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
@@ -42,6 +50,7 @@
             <span class="skill-tag">VS Code</span>
         </div>
     </div>
+
 </div>
 </section>
 </template>
