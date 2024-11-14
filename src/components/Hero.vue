@@ -1,5 +1,6 @@
 <template>
-    <!-- Hero Section  -->
+
+
     <section id="hero">
     <div class="hero container">
       <div>
@@ -10,13 +11,10 @@
       </div>
     </div>
   </section>
-  <!-- End Hero Section  -->
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
 <style>

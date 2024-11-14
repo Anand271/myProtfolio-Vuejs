@@ -2,6 +2,7 @@
  <Nav />
  <Hero />
  <About />
+ <VideoIntro/>
  <Skills />
  <Projecs />
  <Contact />
@@ -22,6 +23,7 @@ import Projecs from '@/components/Projects.vue'
 import About from '@/components/About.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
+import VideoIntro from '@/components/VideoIntro.vue'
 
 export default {
   name: 'HomeView',
@@ -31,7 +33,7 @@ export default {
     };
   },
   components: {
-    Nav, Hero, Projecs, About, Contact, Footer, Skills
+    Nav, Hero, Projecs, About, Contact, Footer, Skills, VideoIntro
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll); // Add scroll event listener on mount

@@ -5,7 +5,7 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="../assets/img/myPic.jpg" alt="img">
+          <img src="../assets/img/myPic.png" alt="img">
         </div>
       </div>
       <div class="col-right">
