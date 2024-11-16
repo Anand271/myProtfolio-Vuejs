@@ -4,7 +4,7 @@
       <div class="projects-header">
         <h1 class="section-title">Recent <span>Projects</span></h1>
       </div>
-	  <div class="row">
+	  <div class="row" style="padding: 0 2rem;">
 		<div v-for="project in projects" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 my-3 open-modal-trigger" @click="openProject(project.id)">
 			<div class="card">
 			<img class="card-img-top" :src="project.image" :alt="project.title" style="border-radius: 10px 10px 0 0;">
