@@ -596,7 +596,7 @@ p {
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
-		padding: 20px 60px;
+		padding: 20px 40px;
 	}
 	h1.section-title {
 		font-size: 6rem;
