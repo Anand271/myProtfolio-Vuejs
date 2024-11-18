@@ -521,7 +521,7 @@ p {
 #footer .footer {
 	min-height: 200px;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 10px;
 }
 #footer h2 {
@@ -534,7 +534,6 @@ p {
 }
 #footer .social-icon {
 	display: flex;
-	margin-bottom: 30px;
 }
 #footer .social-item {
 	height: 50px;
