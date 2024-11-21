@@ -195,6 +195,41 @@
     "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259458/Screenshot_2024-11-10_225228_fbullb.png",
     "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1731259458/Screenshot_2024-11-10_225252_re1wwz.png"
   ]
+},
+{
+  "id": 7,
+  "title": "Dumpstar(Container Delivery)",
+  "shortDescription": "Test",
+  "description": "The Container Delivery Management System Admin Panel streamlines operations with powerful features. Manage products and assign drivers efficiently while tracking orders in real-time. Implement dynamic pricing and discount strategies to optimize revenue and customer satisfaction. Easily update order statuses, providing transparency to clients. Designed for seamless navigation, this system empowers admins to oversee deliveries, drivers, and pricing policies with precision, ensuring smooth logistics and enhanced performance.",
+  "points": [
+    "",
+    "",
+    ""
+  ],
+  "clientGoals":"The client aims to create an efficient platform for managing container deliveries. Goals include streamlining product and driver management, enabling dynamic pricing and discounts, real-time order tracking, and status updates. The system ensures transparency, operational efficiency, and customer satisfaction.",
+  "myContributionPoints":[
+    "Backend Development: Designed and implemented the entire backend architecture from scratch, ensuring scalability and optimal performance.",
+    "Dynamic Features: Developed robust APIs for dynamic pricing, discounts, and real-time order tracking.",
+    "Driver Management: Built modules for efficient driver assignment and product management.",
+    "Order Updates: Integrated real-time order status updates and tracking for seamless operations.",
+    "Security & Reliability: Ensured secure data handling and reliable backend operations for a smooth user experience."
+  ],
+  "image": "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126544/1_a__Order_list_En_pnqvcy.png",
+  "tech": ["Vue.js","Nest.js", "Typescript","Javascript", "HTML", "Bootstrap", "CSS", "WebRTC"],
+  "mainLink":"",
+  "playStore":"",
+  "appStore":"",
+  "images": [
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126544/1_b__Order_details_En_vmn728.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126544/2_a__Product_list_En_q8a1uq.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126690/2_b__Add_product__En_i8wkhs.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126544/3_a__Employee_list_En_ptnzof.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126545/3_b__Add_driver_En_tyssgk.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126544/4_a__Discounts_En_ebsxdy.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126545/4_b__Add_discount_En_exqpdg.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126545/5_a__Dynamic_pricing_En_yptxxm.png",
+      "https://res.cloudinary.com/dtlhwr2ov/image/upload/v1732126545/5_b__Add_new_pricing_rule_En_snci7n.png"
+  ]
 }
   ]
   
