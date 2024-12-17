@@ -8,9 +8,18 @@
  <Contact />
  <Footer />
 
+  <!-- Chat iframe -->
+  <div v-if="showChat" class="chat-container">
+    <iframe 
+      src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/17/13/20241217134012-AWSGHJSE.json" 
+      class="chat-iframe" 
+      frameborder="0">
+    </iframe>
+  </div>
+
  <!-- Scroll-to-Top Button -->
- <button v-if="showScrollButton" class="scroll-to-top" @click="scrollToTop">
-  <i class="fa-solid fa-arrow-up"></i>
+ <button class="scroll-to-top" @click="toggleChat">
+  <i :class="chatBtnCls"></i>
     </button>
 </template>
 
@@ -30,6 +39,8 @@ export default {
   data() {
     return {
       showScrollButton: false, // Controls the visibility of the button
+      showChat: false,
+      chatBtnCls: 'fa-solid fa-comments',
     };
   },
   components: {
@@ -51,16 +62,26 @@ export default {
         behavior: "smooth", // Smooth scrolling
       });
     },
+    toggleChat() {
+      this.showChat = !this.showChat; // Toggle the chat iframe visibility
+      if(this.showChat){
+        this.chatBtnCls = 'fa-solid fa-xmark';
+      }else{
+        this.chatBtnCls = 'fa-solid fa-comments';
+      }
+    },
   },
 }
 </script>
 
 <style>
+
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: crimson;
+    padding: 10px;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -70,11 +91,29 @@ export default {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1001;
+}
+
+.chat-container {
+  position: fixed;
+  bottom: 80px; /* Adjust the position above the button */
+  right: 20px;
+  width: 350px; /* Chat window width */
+  height: 500px; /* Chat window height */
+  z-index: 1000; /* Ensures the chat is above the UI */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #fff;
 }
 
 .scroll-to-top:hover {
     opacity: 0.8;
-    transform: scale(1.1); /* Slight enlargement on hover */
+    transform: scale(1.1); 
 }
 
 </style>
