@@ -14,7 +14,7 @@
               <div class="social-item">
                 <a href="https://github.com/Anand271" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/github.png" /></a>
               </div>
-            
+              
               <div class="social-item">
                 <a  href="mailto:anandsa271@gmail.com" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/gmail.png" /></a>
               </div>
