@@ -7,50 +7,55 @@
         <div class="category-skills">
             <span class="skill-tag">Angular <i class="fa-brands fa-angular"></i></span>
             <span class="skill-tag">.Net core </span>
-            <!-- <span class="skill-tag">Vue <i class="fa-brands fa-vuejs"></i></span> -->
-        </div>
-    </div>
-    <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
-        <h2 class="category-header">Languages</h2>
-        <div class="category-skills">
-            <span class="skill-tag">C#</span>
-            <span class="skill-tag">Typescript</span>
-            <span class="skill-tag">Javascript <i class="fa-brands fa-js"></i></span>
-            <span class="skill-tag">HTML <i class="fa-brands fa-html5"></i></span>
-        <span class="skill-tag">CSS <i class="fa-brands fa-css3-alt"></i></span>
         </div>
     </div>
     <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
         <h2 class="category-header">Databases</h2>
         <div class="category-skills">
-            <span class="skill-tag">MS SQL</span>
-            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MS SQL <i class="fa-solid fa-database"></i></span>
+            <span class="skill-tag">MySQL </span>
             <span class="skill-tag">Postgres Sql</span>
         </div>
     </div>
     <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
-        <h2 class="category-header">libraries</h2>
+        <h2 class="category-header">Identity</h2>
         <div class="category-skills">
-            <span class="skill-tag">Bootstrap <i class="fa-brands fa-bootstrap"></i></span>
-            <span class="skill-tag">J Query </span>
+            <span class="skill-tag">Keycloak <i class="fa-solid fa-key"></i></span>
+            <span class="skill-tag">IdentityServer4</span>
+            <span class="skill-tag">ASP.NET Core Identity</span>
         </div>
     </div>
     <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
         <h2 class="category-header">Tools</h2>
         <div class="category-skills">
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">GitHub <i class="fa-brands fa-github"></i></span>
-            <span class="skill-tag">GitLab <i class="fa-brands fa-gitlab"></i></span>
+            <span class="skill-tag"><i class="fa-brands fa-git"></i> <i class="fa-solid fa-code-branch"></i></span>
+            <span class="skill-tag">Docker <i class="fa-brands fa-docker"></i></span>
+            <span class="skill-tag">Jira <i class="fa-brands fa-jira"></i></span>
+            
+        </div>
+    </div>
+    <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
+        <h2 class="category-header">libraries</h2>
+        <div class="category-skills">
+            <span class="skill-tag">Syncfusion</span>
+            <span class="skill-tag">Bootstrap <i class="fa-brands fa-bootstrap"></i></span>
+            <span class="skill-tag">J Query </span>
         </div>
     </div>
     <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
         <h2 class="category-header">IDEs</h2>
         <div class="category-skills">
-            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">Visual Studio <i class="fa-solid fa-code"></i></span>
             <span class="skill-tag">VS Code</span>
         </div>
     </div>
-
+    <div class="category m-3 col-12 col-lg-4 col-md-6 col-sm-12">
+        <h2 class="category-header">Pattern</h2>
+        <div class="category-skills">
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Repository</span>
+        </div>
+    </div>
 </div>
 
 
